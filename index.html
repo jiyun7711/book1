@@ -117,6 +117,8 @@
       text-align: left;
     }
     
+    
+    
   
     
       .column2 {
@@ -150,14 +152,23 @@
      .item2 {
       grid-column-start: 2;
       grid-column-end: 3;
-      width: 508px;
+      
       
       
     }
     
+    .item2 img {
+      width: 238px;
+      
+    }
+    
      .item3 {
-      grid-row-start: 3;
+      grid-row-start: 2;
       grid-column-start: 3;
+    }
+     .item3 img {
+      width: 242px;
+      
     }
     
    
@@ -174,8 +185,8 @@
     .item6 {
       grid-column-start: 2;
       grid-column-end: 3;
+      grid-row-start: 4;
       width: 508px;
-      
     }
     
     
@@ -199,6 +210,16 @@
       font-size: 10pt;
       font-weight: bold;
           }
+    
+    @media (max-width: 740px) {
+  .container {
+    width: 100%;
+    grid-template-areas: 
+      "header"
+      "body"
+      "footer";
+    grid-template-columns: 3fr;
+  }
    
     
     
@@ -216,13 +237,13 @@
         <div class="header-center"><a href="#link2">탐방다방</a></div>
         <div class="header-right"> <a href="#link3">사장님과의 인터뷰</a></div>
        </div>
-    <img src="https://i.imgur.com/G2duIlN.png" alt="1">
+    <img src= "https://i.imgur.com/G2duIlN.png" alt="1">
       
   </div>
     <div class="columns">
       <div class="column1">
       
-        <img src="https://i.imgur.com/i9eTua3.png" alt="2">
+        <img src= "https://i.imgur.com/i9eTua3.png" alt="2">
          <p>입구를 보면 주황색 차양 아래 간판이 있다. 
         ‘응접실’은 검은색이고 ‘다방’은 빨간색과 검은색으로 강조되어있다. 
            
@@ -231,7 +252,7 @@
         <h2 id="link3">사장님과의 인터뷰</h2>
         <img src="https://i.imgur.com/7EJn2ZR.png" alt="3">
        <p>
-        사장님. 다방 이름은 누가 지으신 거예요.
+           사장님. 다방 이름은 누가 지으신 거예요?
         </p>
         
         <p>⛾  그전에 있던 거예요. 그대로 인수받아서.</p>
@@ -258,21 +279,23 @@
      </div>
       <div class="column2">
         <div class="item1", id="link1">
-         <img src= "https://i.imgur.com/bRbQ0C7.png" alt="4">
+         <img src= "https://i.imgur.com/8SwrMnm.png" alt="4">
         </div>
-      <div class="item2"> <img src= "https://i.imgur.com/BjtibKP.png" alt=5>
-        </div>
-      <p class="item3">
+      <div class="item2"> <img src= "https://i.imgur.com/bRbQ0C7.png" alt=5>
         
-         30년 조리한 조리 도구들이 너무 깨끗해서 놀라울 정도다. 금전 출납기와 메모장이 같이 놓여있다.
-         <br>천장과 벽은 같은 벽지로 마무리했고 다락 문짝에도 벽지를 발랐다. 소박한 한옥집 벽장이 연상된다.
-        </p>
-         <p class="item4">
-         
-         다방으로 들어서면 유리문이 보인다.
+      <p>
+        다방으로 들어서면 유리문이 보인다.
          유리문 표면에 시원한 느낌의 옥색 선팅지가 붙어 있다. 반복적인 기하학적무늬가 시야를 걸러주는 동시에 장식적인 효과를 준다.
          금속과의 조합이 세련되고 원형 손잡이가 매력적이다. 주방 안쪽은 커튼으로 깔끔하게 가렸다.
+         
         </p>
+        </div>
+         <div class="item3"> <img src="https://i.imgur.com/wdMwrCE.png" alt=5>
+         <p>
+         30년 조리한 조리 도구들이 너무 깨끗해서 놀라울 정도다. 금전 출납기와 메모장이 같이 놓여있다.
+         천장과 벽은 같은 벽지로 마무리했고 다락 문짝에도 벽지를 발랐다. 소박한 한옥집 벽장이 연상된다.
+        </p>
+        </div>
         
           <p class="item5">
         "여기는 사무실이 아니라 수도들이 없어. 길가 쪽에는 수도가 있는데. 화장실들도 없잖아.
@@ -289,17 +312,16 @@
          
         </p>
         
-        <div class="item6"> <img src=https://i.imgur.com/9P7tpxn.png>
-          <p>
-          알루미늄 액자 속의 가격표. 가격을 올릴 때마다 조금씩 고치다가 그만두었다.
+        <div class="item6"> <img src= "https://i.imgur.com/9P7tpxn.png">
+          <P> 알루미늄 액자 속의 가격표. 가격을 올릴 때마다 조금씩 고치다가 그만두었다.
           흰 바탕에 검은 글씨를 보고 있자니 수묵화를 볼 때의 차분함이 느껴져서 조금 신기했다.
-          </p>
+          </P>
         </div>
         
-        <div class="item7"> <img src= https://i.imgur.com/UJoUnMK.png> <img src= https://i.imgur.com/NsBZbEA.png>
-        <p>  
+        <div class="item7"> <img src= "https://i.imgur.com/UJoUnMK.png"> <img src= "https://i.imgur.com/NsBZbEA.png">
+           <P>
           테이블은 밝은 색상이고 대리석 무늬가 있다. 꽃 그림이 있는 하얀 찻잔과 받침이 고전적인 느낌을 주는 데 비해 설탕 통은 단순한 디자인이 현대적이다.
-        </p>
+           </P>
         </div>
         
         
